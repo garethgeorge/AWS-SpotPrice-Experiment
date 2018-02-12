@@ -1,0 +1,3 @@
+[submodule "sip-processor"]
+	path = sip-processor
+	url = git@github.com:garethgeorge/sip-processor.git
