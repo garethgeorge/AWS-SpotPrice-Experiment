@@ -1,0 +1,2 @@
+./bin/bmbp_ts -f $1 -T -i 350 -q 0.975 -c 0.01 | grep "pred:" | awk '{print $2,$4,($6+0.0001)}' > tmp.txt 
+./bin/pred-distribution -f tmp.txt -q 0.025 -c 0.99 -F 4.0 -I 0.05 | awk '{print $1/3600,$2}' > $2
