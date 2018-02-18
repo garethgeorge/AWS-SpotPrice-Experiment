@@ -165,7 +165,7 @@ while True:
           "CycleNumber": cycle_no,
           "Timestamp": datetime.now().strftime("%s"),
           "Type": "polling EC2 machine",
-          "RequestInfo": ec2.describe_instances(InstanceIds=[instance_ids]),
+          "RequestInfo": ec2.describe_instances(InstanceIds=instance_ids),
           "Message": "returned information for the instance that was associated with this spotmarket request",
         })
       )
