@@ -1,3 +1,6 @@
 data
 bin
 *.txt
+config.yml
+.DS_Store
+__pycache__
